@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body{
+      font-size: 1.5rem;
+  }
+  .figuras{
+      display: inline-block;
+      width: 100%;
+  }
+  .titulo{
+    width: 100%;
+    padding: 2vh 0;
+  }
+  .titulo p{
+      text-align: center;
+  }
+  section{
+      padding: 5vw 5vh;
+  }
+  label{
+      display: block;
+      margin-left: 25%;
+  }
+  button{
+        display: block;
+        margin-left: 25%;
+  }
+  label button{
+    margin-left: 0%;
+  }

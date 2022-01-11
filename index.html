@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de perímetro y área</title>
+    <script src="./methods.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>Calculadora de figuras geometricas</header>
+    <main>
+        <section>
+            <div class="figuras">
+                <div class="titulo">
+                    <p>
+                        Cuadrado
+                    </p>
+                </div>
+                <div>
+                    <form>
+                        <label for="ladoCuadrado">
+                            <span>Inserta el valor del lado del cuadrado:</span>
+                            <input type="number" name="ladoCuadrado" id="ladoCuadrado">
+                            <button type="button" onclick="perimetroCuadrado()">Calcular perimetro</button>
+                            <button type="button" onclick="areaCuadrado()">Calcular area</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="figuras">
+                <div class="titulo">
+                    <p>
+                        Rectangulo
+                    </p>
+                </div>
+                <div>
+                    <form>
+                        <label for="baseRectangulo" required>
+                            <span>Inserta el valor de la base del rectangulo:</span>
+                            <input type="number" name="baseRectangulo" id="baseRectangulo">
+                        </label>
+                        <label for="alturaRectangulo">
+                            <span>Inserta el valor de la altura del rectangulo:</span>
+                            <input type="number" name="alturaRectangulo" id="alturaRectangulo">
+                        </label>
+                        <button type="button" onclick="perimetroRectangulo()">Calcular perimetro</button>
+                        <button type="button" onclick="areaRectangulo()">Calcular area</button>
+                    </form>
+                </div>
+            </div>
+            <div class="figuras">
+                <div class="titulo">
+                    <p>
+                        Triagunlo
+                    </p>
+                </div>
+                <div>
+                    <span>Perimetro de un triangulo</span>
+                    <form>
+                        <label for="ladoTriangulo1" required>
+                            <span>Inserta el valor del lado 1 del triangulo:</span>
+                            <input type="number" name="ladoTriangulo1" id="ladoTriangulo1">
+                        </label>
+                        <label for="ladoTriangulo2">
+                            <span>Inserta el valor del lado 2 del triangulo:</span>
+                            <input type="number" name="ladoTriangulo2" id="ladoTriangulo2">
+                        </label>
+                        <label for="ladoTriangulo3">
+                            <span>Inserta el valor del lado 3 del triangulo:</span>
+                            <input type="number" name="ladoTriangulo3" id="ladoTriangulo3">
+                        </label>
+                        <button type="button" onclick="perimetroTriangulo()">Calcular perimetro</button>
+                    </form>
+                </div>
+                <div>
+                    <span>Area de un triangulo</span>
+                    <form>
+                        <label for="baseTriangulo" required>
+                            <span>Inserta el valor de la base del triangulo:</span>
+                            <input type="number" name="baseTriangulo" id="baseTriangulo">
+                        </label>
+                        <label for="alturaTriangulo">
+                            <span>Inserta el valor de la altura del triangulo:</span>
+                            <input type="number" name="alturaTriangulo" id="alturaTriangulo">
+                        </label>
+                        <button type="button" onclick="areaTriangulo()">Calcular area</button>
+                    </form>
+                </div>
+            </div>
+            <div class="figuras">
+                <div class="titulo">
+                    <p>
+                        Circulo
+                    </p>
+                </div>
+                <div>
+                    <form>
+                        <label for="diametroCirculo" required>
+                            <span>Inserta el valor del radio del circulo:</span>
+                            <input type="number" name="diametroCirculo" id="diametroCirculo">
+                            <button type="button" onclick="perimetroCirculo()">Calcular area</button>
+                            <button type="button" onclick="areaCirculo()">Calcular area</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="figuras">
+                <div class="titulo">
+                    <p>
+                        Triagunlo Isoseles
+                    </p>
+                </div>
+                <div>
+                    <span>Calculo de la altura de un Triangulo Isoseles</span>
+                    <form>
+                        <label for="ladoTrianguloIs1" required>
+                            <span>Inserta el valor del lado 1 del triangulo:</span>
+                            <input type="number" name="ladoTrianguloIs1" id="ladoTrianguloIs1">
+                        </label>
+                        <label for="ladoTrianguloIs2">
+                            <span>Inserta el valor del lado 2 del triangulo:</span>
+                            <input type="number" name="ladoTrianguloIs2" id="ladoTrianguloIs2">
+                        </label>
+                        <label for="ladoTrianguloIs3">
+                            <span>Inserta el valor del lado 3 del triangulo:</span>
+                            <input type="number" name="ladoTrianguloIs3" id="ladoTrianguloIs3">
+                        </label>
+                        <button type="button" onclick="validarTrianguloIsoceles()">Calcular altura</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

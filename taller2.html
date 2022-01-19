@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de perímetro y área</title>
+    <script src="./methodsTaller2.js"></script>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+
+<body onLoad="myOnLoad()">
+    <header>
+        <div>
+            <span>
+                Descuentos
+            </span>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <span>
+                    Calculadora de descuentos
+                </span>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <span>
+                            Ingrese Precio Original: $
+                        </span>
+                        <label for="precio">
+                            <input type="number" id="precio" name="precio">
+                        </label>
+                    </div>
+                    <div>
+                        <span>
+                            Ingrese descuento:
+                        </span>
+                        <label for="cupones">
+                            <select name="cupones" id="cupones">
+                                <option>Cupones</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="button" onclick="precioConDescuento()">Calcular precio con descuento</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <p id="precioFinal"></p>
+            </div>
+
+
+        </section>
+    </main>
+</body>
+
+</html>
